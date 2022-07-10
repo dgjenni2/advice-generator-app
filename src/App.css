@@ -1,0 +1,123 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+:root {
+	/* Theme Colors */
+	--clr-white: #fff;
+	--clr-cyan-light: hsl(193, 38%, 86%);
+	--clr-neon-green: hsl(150, 100%, 66%);
+	--clr-grayish-blue: hsl(217, 19%, 38%);
+	--clr-dark-grayish-blue: hsl(217, 19%, 24%);
+	--clr-dark-blue: hsl(218, 23%, 16%);
+	--clr-black: #000;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-height: 100vh;
+	color: var(--clr-cyan-light);
+	background-color: var(--clr-dark-blue);
+}
+
+main {
+	width: 90%;
+	margin: 0 auto;
+}
+
+footer {
+	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+h4 {
+	letter-spacing: 0.5em;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+	padding: 1rem 0;
+}
+
+.App {
+	text-align: center;
+	margin: auto;
+}
+
+.advice-display {
+	max-width: 35rem;
+	margin: 0 auto;
+	background-color: var(--clr-dark-grayish-blue);
+}
+
+.advice-generator {
+	position: relative;
+	top: 1.2rem;
+	background-color: var(--clr-neon-green);
+	border-radius: 50%;
+	border: none;
+	padding: 0.8em;
+}
+
+.advice-generator:hover {
+	cursor: pointer;
+	box-shadow: 0 0 0.8rem 0.25rem var(--clr-neon-green);
+}
+
+.advice-generator__dice {
+	display: flex;
+	align-self: center;
+}
+
+.mobile {
+	display: block;
+}
+
+.desktop {
+	display: none;
+}
+
+.reset-margin {
+	margin: 0;
+}
+
+.text-green {
+	color: var(--clr-neon-green);
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 440px) {
+	.mobile {
+		display: none;
+	}
+
+	.desktop {
+		display: block;
+	}
+}
