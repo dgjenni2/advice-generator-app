@@ -63,14 +63,16 @@ p {
 }
 
 .advice-display {
+	border-radius: 1rem;
 	max-width: 35rem;
 	margin: 0 auto;
+	padding: 0.5rem;
 	background-color: var(--clr-dark-grayish-blue);
 }
 
 .advice-generator {
 	position: relative;
-	top: 1.2rem;
+	top: 1.75rem;
 	background-color: var(--clr-neon-green);
 	border-radius: 50%;
 	border: none;
