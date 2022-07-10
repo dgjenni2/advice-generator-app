@@ -53,7 +53,7 @@ function App() {
 					</button>
 				</div>
 			</main>
-			<footer class="attribution">
+			<footer className="attribution">
 				Challenge by{" "}
 				<a
 					href="https://www.frontendmentor.io?ref=challenge"
